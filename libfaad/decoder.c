@@ -214,10 +214,10 @@ unsigned char NeAACDecSetConfiguration(NeAACDecHandle hpDecoder,
 
         /* check output format */
 #ifdef FIXED_POINT
-        if ((config->outputFormat < 1) || (config->outputFormat > 4))
+        if ((config->outputFormat < FAAD_FMT_16BIT) || (config->outputFormat > FAAD_FMT_FLOAT))
             return 0;
 #else
-        if ((config->outputFormat < 1) || (config->outputFormat > 5))
+        if ((config->outputFormat < FAAD_FMT_16BIT) || (config->outputFormat > FAAD_FMT_DOUBLE))
             return 0;
 #endif
         hDecoder->config.outputFormat = config->outputFormat;

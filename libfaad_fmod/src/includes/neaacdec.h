@@ -99,6 +99,7 @@ extern "C" {
 #define FAAD_FMT_24BIT  2
 #define FAAD_FMT_32BIT  3
 #define FAAD_FMT_FLOAT  4
+#define FAAD_FMT_FIXED  FAAD_FMT_FLOAT
 #define FAAD_FMT_DOUBLE 5
 
 /* Capabilities */

@@ -546,7 +546,7 @@ void* output_to_PCM(NeAACDecStruct *hDecoder,
                 int_sample_buffer[(i*channels)+ch] = tmp;
             }
             break;
-        case FAAD_FMT_FIXED:
+        case FAAD_FMT_FLOAT:
             for(i = 0; i < frame_len; i++)
             {
                 real_t tmp = get_sample(input, ch, i, hDecoder->downMatrix, hDecoder->upMatrix,
